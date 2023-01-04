@@ -10,9 +10,13 @@ const printAsItIs = (string) => {
             newtext += ` ${text} `;
         }
     })
+    // Use this when in normal HTML
     const element = document.createElement("p");
     element.setAttribute("class", "text")
     element.innerHTML = newtext
     document.body.appendChild(element);
+
+    // Use this when in react
+    // return newtext
 }
 printAsItIs(String);
